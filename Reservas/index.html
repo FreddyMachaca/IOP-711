@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Panel de Gestión de Colas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Panel de Gestión de Colas</h1>
+    <a href="../index.html" class="btn btn-primary">Volver</a>
+  </header>
+
+  <section id="results-container">
+    <div class="card">
+      <h2>Tamaño promedio de la cola</h2>
+      <p id="lq"></p>
+    </div>
+    <div class="card">
+      <h2>Tiempo promedio de espera en la cola</h2>
+      <p id="wq"> horas</p>
+    </div>
+    <div class="card">
+      <h2>Tiempo promedio de espera en el sistema</h2>
+      <p id="w"> horas</p>
+    </div>
+    <div class="card">
+      <h2>Número promedio de clientes en el sistema</h2>
+      <p id="n"></p>
+    </div>
+    <div class="card">
+      <h2>Número promedio de clientes en la cola</h2>
+      <p id="nq"></p>
+    </div>
+  </section>
+
+  <section id="packages-container">
+    <div class="package">
+      <img src="../images/img-1.jpg" alt="Imagen del paquete 1">
+      <h3>Paquete 1</h3>
+      <p>Tasa de llegada: 5 clientes por hora</p>
+      <p>Tasa de servicio: 6 clientes por hora</p>
+      <button class="reserve-btn" onclick="capturarReserva(5, 6)">Reservar</button>
+    </div>
+
+    <div class="package">
+      <img src="../images/img-3.jpg" alt="Imagen del paquete 2">
+      <h3>Paquete 2</h3>
+      <p>Tasa de llegada: 8 clientes por hora</p>
+      <p>Tasa de servicio: 7 clientes por hora</p>
+      <button class="reserve-btn" onclick="capturarReserva(8, 7)">Reservar</button>
+    </div>
+    <div class="package">
+      <img src="../images/img-4.jpg" alt="Imagen del paquete 3">
+      <h3>Paquete 3</h3>
+      <p>Tasa de llegada: 7 clientes por hora</p>
+      <p>Tasa de servicio: 9 clientes por hora</p>
+      <button class="reserve-btn" onclick="capturarReserva(7, 9)">Reservar</button>
+    </div>
+    <div class="package">
+      <img src="../images/img-5.jpg" alt="Imagen del paquete 4">
+      <h3>Paquete 4</h3>
+      <p>Tasa de llegada: 10 clientes por hora</p>
+      <p>Tasa de servicio: 8 clientes por hora</p>
+      <button class="reserve-btn" onclick="capturarReserva(10, 8)">Reservar</button>
+    </div>
+    <div class="package">
+      <img src="../images/about-2.jpg" alt="Imagen del paquete 5">
+      <h3>Paquete 5</h3>
+      <p>Tasa de llegada: 6 clientes por hora</p>
+      <p>Tasa de servicio: 7 clientes por hora</p>
+      <button class="reserve-btn" onclick="capturarReserva(6, 7)">Reservar</button>
+    </div>
+    <div class="package">
+      <img src="../images/about-3.jpg" alt="Imagen del paquete 6">
+      <h3>Paquete 6</h3>
+      <p>Tasa de llegada: 9 clientes por hora</p>
+      <p>Tasa de servicio: 10 clientes por hora</p>
+      <button class="reserve-btn" onclick="capturarReserva(9, 10)">Reservar</button>
+    </div>
+  </section>
+
+  <section id="stats-container">
+    <div class="stats-card">
+      <h2>Solicitudes realizadas</h2>
+      <p id="count">0</p>
+    </div>
+    <div class="stats-card">
+      <h2>Estado de la cola</h2>
+      <p id="status">NORMAL</p>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
