@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>POKER GAME</title>
+    <link rel="shortcut icon" href="Imagenes/icono.png" />
+    <link rel="stylesheet" href="style.css">
+    <script src="funcion.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert.js"></script>
+</head>
+    <body>
+        <div class ="apuesta">
+            <label>Creditos</label>
+            <input id="money-input" readonly value="Bs 100">
+        </div>
+        <div class="titulo">
+            <h1>POKER GAME</h1>
+        </div>          
+        <div id="contenedor">
+            <div id="a" > 
+                <center><img id="ii1" class="carta" src="Cartas/trasera.jpg" onclick="activarcheck(1)"><br>
+            </div>
+            <div id="a">
+                <center><img id="ii2" class="carta" src="Cartas/trasera.jpg" onclick="activarcheck(2)"><br>
+            </div>
+            <div id="a">
+                <center><img id="ii3" class="carta" src="Cartas/trasera.jpg" onclick="activarcheck(3)"><br>
+            </div>
+            <div id="a">
+                <center><img id="ii4" class="carta" src="Cartas/trasera.jpg" onclick="activarcheck(4)"><br>
+            </div>
+            <div id="a">
+                <center><img id="ii5" class="carta" src="Cartas/trasera.jpg" onclick="activarcheck(5)"><br>
+            </div>
+        </div>
+        <div id = "checkboxes">
+            <input type="checkbox" id = "checkCarta1">
+            <input type="checkbox" id = "checkCarta2">
+            <input type="checkbox" id = "checkCarta3">
+            <input type="checkbox" id = "checkCarta4">
+            <input type="checkbox" id = "checkCarta5">
+        </div>
+
+        <div class = "botones-juego">
+            <button id="Jugar" onclick="jugar()">JUGAR</button>     
+            <button id="Cambio" onclick="CambiarMazo()">CAMBIO</button>   
+            <button onclick="nuevaPartida()">NUEVA PARTIDA</button>
+        </div>
+        <div>
+            <h2>Resultados</h2>
+            <table>
+                <tr>
+                    <th>Categoría</th>
+                    <th>Probabilidad</th>
+                    <th>Ei</th>
+                </tr>
+                <tr>
+                    <td>Todos son diferentes</td>
+                    <td>?</td>
+                    <td>?</td>
+                  </tr>
+                  <tr>
+                    <td>Un par</td>
+                    <td>?</td>
+                    <td>?</td>
+                  </tr>
+                  <tr>
+                    <td>Dos pares</td>
+                    <td>?</td>
+                    <td>?</td>
+                  </tr>
+                  <tr>
+                    <td>Tercia</td>
+                    <td>?</td>
+                    <td>?</td>
+                  </tr>
+                  <tr>
+                    <td>Full House</td>
+                    <td>?</td>
+                    <td>?</td>
+                  </tr>
+                  <tr>
+                    <td>Poker</td>
+                    <td>?</td>
+                    <td>?</td>
+                  </tr>
+                  <tr>
+                    <td>Quintilla</td>
+                    <td>?</td>
+                    <td>?</td>
+                  </tr>
+            </table>
+        </div>
+    </body>
+</html>
