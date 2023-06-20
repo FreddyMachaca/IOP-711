@@ -1,1 +1,1 @@
-# Portafolio de proyectos realizados en la materia investigacion Operativa
+# Portafolio de la materia investigacion Operativa
