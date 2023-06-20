@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Calculadora de Probabilidades de Póker",
+  "version": "1.0",
+  "description": "Una herramienta que calcula las probabilidades de ganar una mano de póker en tiempo real.",
+  "icons": {
+    "128": "icon-128.png"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+  <title>Calculadora de Probabilidades de Póker</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <img src="logo.png" alt="Logo" class="logo">
+
+  <h1>Calculadora de Probabilidades de Póker</h1>
+  
+  <h2>Selecciona tus cartas:</h2>
+  
+  <label for="card1">Carta 1:</label>
+  <select id="card1">
+    <option value="2H">2♥</option>
+    <option value="2C">2♣</option>
+    <option value="2D">2♦</option>
+    <option value="2S">2♠</option>
+    <option value="3H">3♥</option>
+    <option value="3C">3♣</option>
+    <option value="3D">3♦</option>
+    <option value="3S">3♠</option>
+    <option value="4H">4♥</option>
+    <option value="4C">4♣</option>
+    <option value="4D">4♦</option>
+    <option value="4S">4♠</option>
+    <option value="5H">5♥</option>
+    <option value="5C">5♣</option>
+    <option value="5D">5♦</option>
+    <option value="5S">5♠</option>
+    
+    <option value="6H">6♥</option>
+    <option value="6C">6♣</option>
+    <option value="6D">6♦</option>
+    <option value="6S">6♠</option>
+    <option value="7H">7♥</option>
+    <option value="7C">7♣</option>
+    <option value="7D">7♦</option>
+    <option value="7S">7♠</option>
+    <option value="8H">8♥</option>
+    <option value="8C">8♣</option>
+    <option value="8D">8♦</option>
+    <option value="8S">8♠</option>
+    <option value="9H">9♥</option>
+    <option value="9C">9♣</option>
+    <option value="9D">9♦</option>
+    <option value="9S">9♠</option>
+    <option value="10H">10♥</option>
+    <option value="10C">10♣</option>
+    <option value="10D">10♦</option>
+    <option value="10S">10♠</option>
+
+    <option value="JH">J♥</option>
+    <option value="JC">J♣</option>
+    <option value="JD">J♦</option>
+    <option value="JS">J♠</option>
+    <option value="QH">Q♥</option>
+    <option value="QC">Q♣</option>
+    <option value="QD">Q♦</option>
+    <option value="QS">Q♠</option>
+    <option value="KH">K♥</option>
+    <option value="KC">K♣</option>
+    <option value="KD">K♦</option>
+    <option value="KS">K♠</option>
+
+    <option value="AH">A♥</option>
+    <option value="AC">A♣</option>
+    <option value="AD">A♦</option>
+    <option value="AS">A♠</option>
+  </select>
+
+  <label for="card2">Carta 2:</label>
+  <select id="card2">
+    <option value="2H">2♥</option>
+    <option value="2C">2♣</option>
+    <option value="2D">2♦</option>
+    <option value="2S">2♠</option>
+    <option value="3H">3♥</option>
+    <option value="3C">3♣</option>
+    <option value="3D">3♦</option>
+    <option value="3S">3♠</option>
+    <option value="4H">4♥</option>
+    <option value="4C">4♣</option>
+    <option value="4D">4♦</option>
+    <option value="4S">4♠</option>
+    <option value="5H">5♥</option>
+    <option value="5C">5♣</option>
+    <option value="5D">5♦</option>
+    <option value="5S">5♠</option>
+    
+    <option value="6H">6♥</option>
+    <option value="6C">6♣</option>
+    <option value="6D">6♦</option>
+    <option value="6S">6♠</option>
+    <option value="7H">7♥</option>
+    <option value="7C">7♣</option>
+    <option value="7D">7♦</option>
+    <option value="7S">7♠</option>
+    <option value="8H">8♥</option>
+    <option value="8C">8♣</option>
+    <option value="8D">8♦</option>
+    <option value="8S">8♠</option>
+    <option value="9H">9♥</option>
+    <option value="9C">9♣</option>
+    <option value="9D">9♦</option>
+    <option value="9S">9♠</option>
+    <option value="10H">10♥</option>
+    <option value="10C">10♣</option>
+    <option value="10D">10♦</option>
+    <option value="10S">10♠</option>
+
+    <option value="JH">J♥</option>
+    <option value="JC">J♣</option>
+    <option value="JD">J♦</option>
+    <option value="JS">J♠</option>
+    <option value="QH">Q♥</option>
+    <option value="QC">Q♣</option>
+    <option value="QD">Q♦</option>
+    <option value="QS">Q♠</option>
+    <option value="KH">K♥</option>
+    <option value="KC">K♣</option>
+    <option value="KD">K♦</option>
+    <option value="KS">K♠</option>
+
+    <option value="AH">A♥</option>
+    <option value="AC">A♣</option>
+    <option value="AD">A♦</option>
+    <option value="AS">A♠</option>
+  </select>
+
+  <label for="card3">Carta 3:</label>
+  <select id="card3">
+    <option value="2H">2♥</option>
+    <option value="2C">2♣</option>
+    <option value="2D">2♦</option>
+    <option value="2S">2♠</option>
+    <option value="3H">3♥</option>
+    <option value="3C">3♣</option>
+    <option value="3D">3♦</option>
+    <option value="3S">3♠</option>
+    <option value="4H">4♥</option>
+    <option value="4C">4♣</option>
+    <option value="4D">4♦</option>
+    <option value="4S">4♠</option>
+    <option value="5H">5♥</option>
+    <option value="5C">5♣</option>
+    <option value="5D">5♦</option>
+    <option value="5S">5♠</option>
+    
+    <option value="6H">6♥</option>
+    <option value="6C">6♣</option>
+    <option value="6D">6♦</option>
+    <option value="6S">6♠</option>
+    <option value="7H">7♥</option>
+    <option value="7C">7♣</option>
+    <option value="7D">7♦</option>
+    <option value="7S">7♠</option>
+    <option value="8H">8♥</option>
+    <option value="8C">8♣</option>
+    <option value="8D">8♦</option>
+    <option value="8S">8♠</option>
+    <option value="9H">9♥</option>
+    <option value="9C">9♣</option>
+    <option value="9D">9♦</option>
+    <option value="9S">9♠</option>
+    <option value="10H">10♥</option>
+    <option value="10C">10♣</option>
+    <option value="10D">10♦</option>
+    <option value="10S">10♠</option>
+
+    <option value="JH">J♥</option>
+    <option value="JC">J♣</option>
+    <option value="JD">J♦</option>
+    <option value="JS">J♠</option>
+    <option value="QH">Q♥</option>
+    <option value="QC">Q♣</option>
+    <option value="QD">Q♦</option>
+    <option value="QS">Q♠</option>
+    <option value="KH">K♥</option>
+    <option value="KC">K♣</option>
+    <option value="KD">K♦</option>
+    <option value="KS">K♠</option>
+
+    <option value="AH">A♥</option>
+    <option value="AC">A♣</option>
+    <option value="AD">A♦</option>
+    <option value="AS">A♠</option>
+  </select>
+
+  <label for="card4">Carta 4:</label>
+  <select id="card4">
+    <option value="2H">2♥</option>
+    <option value="2C">2♣</option>
+    <option value="2D">2♦</option>
+    <option value="2S">2♠</option>
+    <option value="3H">3♥</option>
+    <option value="3C">3♣</option>
+    <option value="3D">3♦</option>
+    <option value="3S">3♠</option>
+    <option value="4H">4♥</option>
+    <option value="4C">4♣</option>
+    <option value="4D">4♦</option>
+    <option value="4S">4♠</option>
+    <option value="5H">5♥</option>
+    <option value="5C">5♣</option>
+    <option value="5D">5♦</option>
+    <option value="5S">5♠</option>
+    
+    <option value="6H">6♥</option>
+    <option value="6C">6♣</option>
+    <option value="6D">6♦</option>
+    <option value="6S">6♠</option>
+    <option value="7H">7♥</option>
+    <option value="7C">7♣</option>
+    <option value="7D">7♦</option>
+    <option value="7S">7♠</option>
+    <option value="8H">8♥</option>
+    <option value="8C">8♣</option>
+    <option value="8D">8♦</option>
+    <option value="8S">8♠</option>
+    <option value="9H">9♥</option>
+    <option value="9C">9♣</option>
+    <option value="9D">9♦</option>
+    <option value="9S">9♠</option>
+    <option value="10H">10♥</option>
+    <option value="10C">10♣</option>
+    <option value="10D">10♦</option>
+    <option value="10S">10♠</option>
+
+    <option value="JH">J♥</option>
+    <option value="JC">J♣</option>
+    <option value="JD">J♦</option>
+    <option value="JS">J♠</option>
+    <option value="QH">Q♥</option>
+    <option value="QC">Q♣</option>
+    <option value="QD">Q♦</option>
+    <option value="QS">Q♠</option>
+    <option value="KH">K♥</option>
+    <option value="KC">K♣</option>
+    <option value="KD">K♦</option>
+    <option value="KS">K♠</option>
+
+    <option value="AH">A♥</option>
+    <option value="AC">A♣</option>
+    <option value="AD">A♦</option>
+    <option value="AS">A♠</option>
+  </select>
+
+  <label for="card5">Carta 5:</label>
+  <select id="card5">
+    <option value="2H">2♥</option>
+    <option value="2C">2♣</option>
+    <option value="2D">2♦</option>
+    <option value="2S">2♠</option>
+    <option value="3H">3♥</option>
+    <option value="3C">3♣</option>
+    <option value="3D">3♦</option>
+    <option value="3S">3♠</option>
+    <option value="4H">4♥</option>
+    <option value="4C">4♣</option>
+    <option value="4D">4♦</option>
+    <option value="4S">4♠</option>
+    <option value="5H">5♥</option>
+    <option value="5C">5♣</option>
+    <option value="5D">5♦</option>
+    <option value="5S">5♠</option>
+    
+    <option value="6H">6♥</option>
+    <option value="6C">6♣</option>
+    <option value="6D">6♦</option>
+    <option value="6S">6♠</option>
+    <option value="7H">7♥</option>
+    <option value="7C">7♣</option>
+    <option value="7D">7♦</option>
+    <option value="7S">7♠</option>
+    <option value="8H">8♥</option>
+    <option value="8C">8♣</option>
+    <option value="8D">8♦</option>
+    <option value="8S">8♠</option>
+    <option value="9H">9♥</option>
+    <option value="9C">9♣</option>
+    <option value="9D">9♦</option>
+    <option value="9S">9♠</option>
+    <option value="10H">10♥</option>
+    <option value="10C">10♣</option>
+    <option value="10D">10♦</option>
+    <option value="10S">10♠</option>
+
+    <option value="JH">J♥</option>
+    <option value="JC">J♣</option>
+    <option value="JD">J♦</option>
+    <option value="JS">J♠</option>
+    <option value="QH">Q♥</option>
+    <option value="QC">Q♣</option>
+    <option value="QD">Q♦</option>
+    <option value="QS">Q♠</option>
+    <option value="KH">K♥</option>
+    <option value="KC">K♣</option>
+    <option value="KD">K♦</option>
+    <option value="KS">K♠</option>
+
+    <option value="AH">A♥</option>
+    <option value="AC">A♣</option>
+    <option value="AD">A♦</option>
+    <option value="AS">A♠</option>
+  </select>
+
+  <br><br>
+  
+  <button onclick="calcularProbabilidades()">Calcular</button>
+  <button id="limpiar">Limpiar</button>
+  <div id="resultado"></div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
