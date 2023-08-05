@@ -1,448 +1,94 @@
-<!doctype html>
-<html lang="es">
-  <head>
-    <title>Turismo en Bolivia</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet"href="style.css">
-    <script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;700&display=swap" rel="stylesheet">
-  
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
-  <body>
-    
-    <nav class="navbar navbar-expand-lg navbar-light main-navbar
-      bg m-navbar-light" id="main-navbar">
-      <div class="container">
-        <div class="font1">
-          <a class="navbar-brand"href="#" style="color: white; font-size: 30px;">Turismo</a>
-        </div>
-          <button class="navbar-toggler"type="button"data-toggle="collapse"
-          data-target="#my-nav" aria-controls="p-nav"aria-expanded="false"
-          aria-label="toggle-navigation">
-        <span id="menuDropDown" style="color: white;">Menu</span>
-        </button>
-        <div class="collapse navbar-collapse"id="my-nav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a href="index.html"class="nav-link"style="color: white;" >Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#explore"class="nav-link" style="color: white;" >Explorar</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#popular-places"class="nav-link" style="color: white;">Lugares populares</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#blog"class="nav-link" style="color: white;">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact"class="nav-link" style="color: white;">Contactos</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./Reservas/index.html"class="nav-link" style="color: white;">RESERVAR</a>
-                </li>
-            </ul>
-        </div>
-      </div>
-    </nav>
-    
-    <section class="hero-wrap">
-    <div class="overlay"></div>
-    <div class="container">
-        <div class="row no-gutters main-text align-items-center">
-            <div class="col-lg-7 col-md-6 d-flex align-items-end">
-                <div class="text">
-                    <h1 class="mb-4 text-capitalize"> Turismo
-                      En <br>
-                         Bolivia.
-                      </h1>
-                      <p style="font-size:18px;">
-                    Bolivia es un país del centro de Sudamérica, con un terreno variado desde los Andes, el Desierto de Atacama y el bosque pluvial en la cuenca del Amazonas.</p>
-                    
-                </div>
-            </div>
-        </div>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Panel de Gestión de Colas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Panel de Gestión de Colas</h1>
+  </header>
+
+  <section id="results-container">
+    <div class="card">
+      <h2>Tamaño promedio de la cola</h2>
+      <p id="lq"></p>
     </div>
-</section>
-
-
-
-<section id="explore" class="about-section mt-5">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-6 text-center heading-section mb-5">
-                <h2 class="text-black mb-2">Bolivia</h2>
-                <p>Resplandeciendo bajo el sol andino, es la cuna de la nación y una mezcla heteróclita de lo viejo y lo nuevo, uno puede pasar los días recorriendo edificios históricos y museos.</p>
-            </div>
-        </div>
-        <div class="row img-wrap mb-5 mb-lg-0">
-            <div class="col-12">
-                <div class="row">
-                    <div class="mb-4 margin-lg-0 col-lg-6 order-lg-2">
-                        <a href="#" class="effect">
-                            <img src="images/about-1.jpg"alt=""
-                            class="img-fluid">
-                        </a>
-                    </div>
-                    <div class="col-lg-5 mr-auto text-lg-right align-self-center order-lg-1">
-                        <h2 class="text-black">Lugares culturales</h2>
-                        <p class="mb-4">
-                            La cultura de Bolivia es muy rica y diversa gracias a los diferentes orígenes del pueblo boliviano.
-                        </p>
-                           <a href="#" target="_blank" class="btn btn-about">Leer Sobre</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row img-wrap mb-5 mb-lg-0">
-            <div class="col-12">
-                <div class="row">
-                    <div class="mb-4 margin-lg-0 col-lg-6">
-                        <a href="#" class="effect">
-                            <img src="images/about-2.jpg"alt=""
-                            class="img-fluid">
-                        </a>
-                    </div>
-                    <div class="col-lg-5 ml-auto align-self-center order-lg-1">
-                        <h2 class="text-black">Lugares Historicos</h2>
-                        <p class="mb-4">
-                            La historia de Bolivia es una de las más antiguas de América, ya que se remonta a la época precolombina.
-                        </p>
-                        <a href="#" target="_blank" class="btn btn-about ">Leer sobre</a>
-                         
-                    </div>
-                </div>
-            </div>
-        </div>
-       
-        <div class="row img-wrap mb-5 mb-lg-0">
-            <div class="col-12">
-                <div class="row">
-                    <div class="mb-4 margin-lg-0 col-lg-6 order-lg-2">
-                        <a href="#" class="effect">
-                            <img src="images/about-3.jpg"alt=""
-                            class="img-fluid">
-                        </a>
-                    </div>
-                    <div class="col-lg-5 mr-auto text-lg-right align-self-center order-lg-1">
-                        <h2 class="text-black">Vida Silvestre</h2>
-                        <p class="mb-4">
-                            La vida silvestre de Bolivia es muy rica y diversa gracias a los diferentes orígenes del pueblo boliviano.
-                        </p>
-                          <a href="#" target="_blank" class="btn btn-about">Leer Sobre</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!------->
-        <div class="row img-wrap mb-5 mb-lg-0">
-            <div class="col-12">
-                <div class="row">
-                    <div class="mb-4 margin-lg-0 col-lg-6">
-                        <a href="#" class="effect">
-                            <img src="images/about-4.jpg"alt=""
-                            class="img-fluid">
-                        </a>
-                    </div>
-                    <div class="col-lg-5 ml-auto align-self-center order-lg-1">
-                        <h2 class="text-black">Lugares de Aventura</h2>
-                        <p class="mb-4">
-                            Bolivia posse una gran variedad de lugares para realizar actividades de aventura debido a su geografia.
-                        </p>
-                        <a href="#" target="_blank" class="btn btn-about">Leer Sobre</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="card">
+      <h2>Tiempo promedio de espera en la cola</h2>
+      <p id="wq"> horas</p>
     </div>
-</section>
-
-<section id="popular-places">
-     
-      <div class="popular section-bg img-effect mt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-        <div class="section-title text-center">                      
-          <h1 class="text-white">Departamentos populares</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="card">
+      <h2>Tiempo promedio de espera en el sistema</h2>
+      <p id="w"> horas</p>
     </div>
-   
-    <div class="all-image">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-5 col-md-5">
-                    <div class="single-img">
-                        <div class="img-thumb">
-                            <img src="images/img-1.jpg" alt="">
-                        </div>
-                        <div class="img-hover">
-                            <div class="title">
-                                    <h3>La Paz</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-7 col-md-7">
-                    <div class="single-img">
-                        <div class="img-thumb">
-                            <img src="images/img-2.jpg" alt="">
-                        </div>
-                        
-                        <div class="img-hover">
-                            <div class="title">
-                                    <h3>Santa Cruz</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6 col-lg-4">
-                    <div class="single-img radial">
-                        <div class="img-thumb">
-                            <img src="images/img-3.jpg" alt="">
-                        </div>
-                       <div class="img-hover">
-                        <div class="title">
-                        <h3>Pando</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6 col-lg-4">
-                    <div class="single-img radial">
-                        <div class="img-thumb">
-                            <img src="images/img-4.jpg" alt="">
-                        </div>
-                         <div class="img-hover">
-                            <div class="title">
-                                    <h3>Cochabamba</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-12 col-lg-4">
-                    <div class="single-img radial">
-                        <div class="img-thumb">
-                            <img src="images/img-5.jpg" alt="">
-                        </div>
-                     <div class="img-hover">
-                            <div class="title">
-                                    <h3>Oruro</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-              </div>
+    <div class="card">
+      <h2>Número promedio de clientes en el sistema</h2>
+      <p id="n"></p>
     </div>
-  
-    </section>
-
-
-<!--- Team Section Banaa lete hai-->
-<section class="team section-bg mt-5">
-    <div class="container">
-        <div class="section-title">
-            <h2 class="text-center">Equipo</h2>
-            <p class="text-center">¡Conozca a nuestro equipo!</p>
-        </div>
-        <div class="row">
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                <div class="member">
-                    <div class="member-img">
-                        <img src="images/perfil1.jpg"class="img-fluid"alt="">
-                        <div class="social">
-                            <a href="#"><i class="fab fa-facebook" target="_blank"></i></a>
-                            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        </div>
-
-                    </div>
-                    <div class="member-info">
-                        <h4>JOEL REYNALDO</h4>
-                        <span>Team Member</span>
-                    </div>
-                </div>
-            </div>
-            <!---->
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                <div class="member">
-                    <div class="member-img">
-                        <img src="images/perfil2.jpg"class="img-fluid"alt="">
-                        <div class="social">
-                           <a href="#"><i class="fab fa-facebook" target="_blank"></i></a>
-                            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        </div>
-
-                    </div>
-                    <div class="member-info">
-                        <h4>Henry</h4>
-                        <span>Team Menber</span>
-                    </div>
-                </div>
-            </div>
-            <!---->
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                <div class="member">
-                    <div class="member-img">
-                        <img src="images/perfil2.jpg"class="img-fluid"alt="">
-                        <div class="social">
-                            <a href="#"><i class="fab fa-facebook" target="_blank"></i></a>
-                            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        </div>
-
-                    </div>
-                    <div class="member-info">
-                        <h4>Freddy</h4>
-                        <span>Team Member</span>
-                    </div>
-                </div>
-            </div>
-            <!---->
-
-
-
-
-        </div>
+    <div class="card">
+      <h2>Número promedio de clientes en la cola</h2>
+      <p id="nq"></p>
     </div>
-</section>
-<!---End of Team Section-->
+  </section>
 
-
-
-<!--- Blog Section-->
-<section id="blog" class="blog-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="section-title">
-                    <h2 class="text-center pb-2">
-                        Blogs recientes
-                    </h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-6">
-                <div class="single-blog">
-                    <img src="images/img-1.jpg" class="img-fluid" alt="">
-                    <div class="blog-detail">
-                        <div class="blog-date">
-                            Julio 18,2022
-                        </div>
-                    </div>
-                    <h4><a href="#" target="_blank">La Paz</a></h4>
-                </div>
-            </div>
-            <!----->
-            <div class="col-lg-4 col-md-6">
-                <div class="single-blog">
-                    <img src="images/img-2.jpg" class="img-fluid" alt="">
-                    <div class="blog-detail">
-                        <div class="blog-date">
-                            Julio 18,2022
-                        </div>
-                    </div>
-                    <h4><a href="#" target="_blank">
-                    Santa Cruz </a></h4>
-                </div>
-            </div>
-            <!----->
-            <div class="col-lg-4 col-md-6">
-                <div class="single-blog">
-                    <img src="images/img-3.jpg" class="img-fluid" alt="">
-                    <div class="blog-detail">
-                        <div class="blog-date">
-                            Febrero 18,2023
-                        </div>
-                    </div>
-                    <h4><a href="#" target="_blank">Pando</a></h4>
-                </div>
-            </div>
-            <!----->
-        </div>
+  <section id="packages-container">
+    <div class="package">
+      <img src="../images/img-1.jpg" alt="Imagen del paquete 1">
+      <h3>Paquete 1</h3>
+      <p>Tasa de llegada: 5 clientes por hora</p>
+      <p>Tasa de servicio: 6 clientes por hora</p>
+      <button class="reserve-btn" onclick="capturarReserva(5, 6)">Reservar</button>
     </div>
-</section>
-<!---End of Blog Section-->
-<!---Contact Section-->
-<section id="contact" class="contact mt-3">
-<div class="container">
-    <div class="section-title">
-        <h2 class="text-center">
-            Contactanos
-        </h2>
-        <p class="text-center">
-            ¡Contacta con el equipo para cualquier consulta!
-        </p>
+
+    <div class="package">
+      <img src="../images/img-2.jpg" alt="Imagen del paquete 2">
+      <h3>Paquete 2</h3>
+      <p>Tasa de llegada: 8 clientes por hora</p>
+      <p>Tasa de servicio: 7 clientes por hora</p>
+      <button class="reserve-btn" onclick="capturarReserva(8, 7)">Reservar</button>
     </div>
-    <div class="row">
-        <div class="col-lg-6">
-            <form>
-                <div class="form-row">
-                    <div class="col-md-6 form-group">
-                        <input type="text"name="name"class="form-control"
-                        id="name"placeholder="Nombre">
-                    </div>
-                    <div class="col-md-6 form-group">
-                        <input type="email"name="email"class="form-control"
-                        id="email"placeholder="Email">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <textarea class="form-control"name="message"row="6"
-                    placeholder="Mensaje"></textarea>
-                </div>
-                <div><a href="#" class="btn btn-about">Enviar Mensaje</a></div>
-
-            </form>
-        </div>
+    <div class="package">
+      <img src="../images/img-3.jpg" alt="Imagen del paquete 3">
+      <h3>Paquete 3</h3>
+      <p>Tasa de llegada: 7 clientes por hora</p>
+      <p>Tasa de servicio: 9 clientes por hora</p>
+      <button class="reserve-btn" onclick="capturarReserva(7, 9)">Reservar</button>
     </div>
-</div>
-</section> 
-<!---End of Contact Section-->
+    <div class="package">
+      <img src="../images/img-4.jpg" alt="Imagen del paquete 4">
+      <h3>Paquete 4</h3>
+      <p>Tasa de llegada: 10 clientes por hora</p>
+      <p>Tasa de servicio: 8 clientes por hora</p>
+      <button class="reserve-btn" onclick="capturarReserva(10, 8)">Reservar</button>
+    </div>
+    <div class="package">
+      <img src="../images/img-5.jpg" alt="Imagen del paquete 5">
+      <h3>Paquete 5</h3>
+      <p>Tasa de llegada: 6 clientes por hora</p>
+      <p>Tasa de servicio: 7 clientes por hora</p>
+      <button class="reserve-btn" onclick="capturarReserva(6, 7)">Reservar</button>
+    </div>
+    <div class="package">
+      <img src="../images/img-6.jpg" alt="Imagen del paquete 6">
+      <h3>Paquete 6</h3>
+      <p>Tasa de llegada: 9 clientes por hora</p>
+      <p>Tasa de servicio: 10 clientes por hora</p>
+      <button class="reserve-btn" onclick="capturarReserva(9, 10)">Reservar</button>
+    </div>
+  </section>
 
-<!---->
-<footer id="footer">
-  <div class="container py-4">
-      <div class="copyright">
-          &copy;Copyright<strong><span> Git Push </span></strong>
-          Todos los derechos reservados
-      </div>
-      <div class="credits">
-          Diseñado por <a href="#" target="_blank"> GIT PUSH</a>
-      </div>
-  </div>
-</footer>
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-  </body>
-</html>
-<!-- partial -->
-  <!--  Gitpush ChatBot Code  -->
-<script type="text/javascript">
-    window.__be = window.__be || {};
-    window.__be.id = "60f43d01c27e360007ae33b3";
-    (function() {
-        var be = document.createElement('script'); be.type = 'text/javascript'; be.async = true;
-        be.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.chatbot.com/widget/plugin.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(be, s);
-    })();
-</script>
-<!-- ChatBot prueba-->
+  <section id="stats-container">
+    <div class="stats-card">
+      <h2>Solicitudes realizadas</h2>
+      <p id="count">0</p>
+    </div>
+    <div class="stats-card">
+      <h2>Estado de la cola</h2>
+      <p id="status">NORMAL</p>
+    </div>
+  </section>
+  <script src="script.js"></script>
 </body>
 </html>
